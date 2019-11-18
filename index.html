@@ -130,13 +130,21 @@
 							<header>
 								<h2>Zakažite besplatan demo!</h2>
 							</header>
-							<form method="post" action="#">
+							<form method="post" action="https://formspree.io/myyylalp">
+								<script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
+								<script>
+								grecaptcha.ready(function() {
+									grecaptcha.execute('6LcZX8MUAAAAAH1ry1lBLknndP9sECpHtRwh4hy5', {action: 'homepage'}).then(function(token) {
+									   console.log('reCAPTCHA v3 Ready...');
+									});
+								});
+								</script>
 								<div class="row 50%">
 									<div class="6u 12u(narrower)">
 										<input type="text" name="name" id="name" placeholder="Ime i prezime" />
 									</div>
 									<div class="6u 12u(narrower)">
-										<input type="text" name="email" id="email" placeholder="Email" />
+										<input type="text" name="_replyto" id="email" placeholder="Email" />
 									</div>
 								</div>
 								<div class="row 50%">
