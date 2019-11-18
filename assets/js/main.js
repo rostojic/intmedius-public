@@ -38,12 +38,12 @@
 			// Title Bar.
 				$(
 					'<div id="titleBar">' +
-						'<a href="#navPanel" class="toggle"></a>' +
+						//'<a href="#navPanel" class="toggle"></a>' +
 						'<span class="title">' + $('#logo').html() + '</span>' +
 					'</div>'
 				)
 					.appendTo($body);
-
+			/*
 			// Navigation Panel.
 				$(
 					'<div id="navPanel">' +
@@ -67,7 +67,7 @@
 			// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
 					$('#titleBar, #navPanel, #page-wrapper')
-						.css('transition', 'none');
+						.css('transition', 'none');*/
 
 	});
 
