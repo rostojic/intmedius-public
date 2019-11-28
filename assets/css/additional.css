@@ -1,0 +1,55 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16em;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contact-item i {
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #333d47;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2em;
+  margin-right: 20px;
+}
+.contact-item a {
+  text-decoration: none;
+  color: #333d47;
+}
+
+form input[type="email"] {
+  box-sizing: border-box;
+  line-height: 1.7em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  color: #656b74;
+  font-size: 13pt;
+  transition: background-color 0.25s ease-in-out;
+  -webkit-appearance: none;
+  position: relative;
+  width: 100%;
+  border: 0;
+  padding: 0.7em;
+  border-radius: 0.5em;
+  background: #f5f7fa;
+  outline: 0;
+}
+
+#header-wrapper,
+#titleBar > span {
+  background: #333d47;
+  box-shadow: none;
+}
+#titleBar > span {
+  border-bottom: solid 2px white;
+}
